@@ -3,7 +3,6 @@ NS='awscloud'
 REPO='nginx'
 
 docker tag nginx $REP/$NS/$REPO
-docker login -u awscloud -p 8ik,*IK< $REP
+docker login -u awscloud -p "8ik,*IK<" $REP
 docker push $REP/$NS/$REPO
 docker rmi $REP/$NS/$REPO
-
